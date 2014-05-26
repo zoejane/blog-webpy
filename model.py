@@ -1,6 +1,6 @@
 import web, datetime
 
-db = web.database(dbn='mysql', db='blog', user='zoe')
+db = web.database(dbn='mysql', user='root', pw='1234', db='mysql')
 
 def get_posts():
     return db.select('entries', order='id DESC')
